@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Enemy_1 extends the Enemy class
-public class Enemy_1 : Enemy {
+public class Enemy_1 : Enemy
+{
 
     [Header("Set in Inspector: Enemy_1")]
     // # seconds for a full sine wave
