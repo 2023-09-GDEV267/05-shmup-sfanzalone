@@ -36,7 +36,8 @@ public class WeaponDefinition
     public float delayBetweenShots = 0;
     public float velocity = 20; // Speed of projectiles
 }
-public class Weapon : MonoBehaviour {
+public class Weapon : MonoBehaviour
+{
     static public Transform PROJECTILE_ANCHOR;
 
     [Header("Set Dynamically")]

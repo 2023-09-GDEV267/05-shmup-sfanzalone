@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUp : MonoBehaviour {
+public class PowerUp : MonoBehaviour
+{
 
     [Header("Set in Inspector")]
     // This is an unusual but handy use of Vector2s. x holds a min value
