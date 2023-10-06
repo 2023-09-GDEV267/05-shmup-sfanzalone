@@ -21,7 +21,8 @@ public class Part
     public Material mat; // The Material to show damage
 }
 
-public class Enemy_4 : Enemy {
+public class Enemy_4 : Enemy
+{
 
     [Header("Set in Inspector: Enemy_4")]
     public Part[] parts; // The array of ship Parts
