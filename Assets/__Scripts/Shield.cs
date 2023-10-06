@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shield : MonoBehaviour {
+public class Shield : MonoBehaviour
+{
     [Header("Set in Inspector")]
     public float rotationsPerSecond = 0.1f;
 
