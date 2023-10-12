@@ -262,11 +262,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec2a0bf962f14c43b04c07fcef9361e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
   fireRate: 0.3
-  score: 100
+  score: 1000
   showDamageDuration: 0.1
-  powerUpDropChance: 1
+  powerUpDropChance: 10
   originalColors: []
   materials: []
   showingDamage: 0
