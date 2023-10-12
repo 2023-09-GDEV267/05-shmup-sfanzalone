@@ -62,6 +62,29 @@ public class Boss : Enemy
         u = 1 - Mathf.Pow(1 - u, 2); // Apply Ease Out easing to u
         pos = ((1 - u) * p0) + (u * p1);// Simple linear interpolation
     }
+        
+    //Distance where Boss turns around
+    private float leftAndRightEdge = 4f;
+
+    // Update is called once per frame
+    void Update()
+    {
+        //Basic Movement
+        Vector3 pos = transform.position;
+        pos.x += speed * Time.deltaTime;
+        transform.position = pos;
+
+        //Changing Direction
+        if (pos.x < -leftAndRightEdge)
+        {
+            speed = Mathf.Abs(speed); //Move right
+        }
+
+        else if (pos.x > leftAndRightEdge)
+        {
+            speed = -Mathf.Abs(speed); //Move left
+        }
+    }
 
     // These two functions find a Part in parts based on name or GameObject
     Part FindPart(string n)
